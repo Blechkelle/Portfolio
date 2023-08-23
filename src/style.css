@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Plein-Variable';
+    src: url('../public/fonts/Plein/Plein-Variable.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Variable.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 300.0 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+@font-face {
+    font-family: 'Plein-VariableItalic';
+    src: url('../public/fonts/Plein/Plein-VariableItalic.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-VariableItalic.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Plein-Light';
+    src: url('../public/fonts/Plein/Plein-Light.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Light.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Plein-LightItalic';
+    src: url('../public/fonts/Plein/Plein-LightItalic.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-LightItalic.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Plein-Regular';
+    src: url('../public/fonts/Plein/Plein-Regular.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Regular.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Plein-Italic';
+    src: url('../public/fonts/Plein/Plein-Italic.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Italic.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Plein-Medium';
+    src: url('../public/fonts/Plein/Plein-Medium.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Medium.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Plein-MediumItalic';
+    src: url('../public/fonts/Plein/Plein-MediumItalic.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-MediumItalic.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Plein-Bold';
+    src: url('../public/fonts/Plein/Plein-Bold.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Bold.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Plein-BoldItalic';
+    src: url('../public/fonts/Plein/Plein-BoldItalic.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-BoldItalic.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Plein-Black';
+    src: url('../public/fonts/Plein/Plein-Black.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-Black.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Plein-BlackItalic';
+    src: url('../public/fonts/Plein/Plein-BlackItalic.woff2') format('woff2'),
+    url('../public/fonts/Plein/Plein-BlackItalic.woff') format('woff'),
+    url('../public/fonts/Plein/Plein-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+.gradientText {
+    color: #6d94bf;
+}
+.gradientTextGreenish {
+    background: -webkit-linear-gradient(225deg, rgb(0 203 137 / 88%), rgb(0 53 177 / 58%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.divider {
+    height: 2px;
+    width: 100%;
+}
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e7ecf5;
+}
+.footerLink {
+    text-decoration: none;
+    color: #f77777;
+}
+

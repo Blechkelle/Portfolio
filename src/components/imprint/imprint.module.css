@@ -1,0 +1,4 @@
+.imprintWrapper {
+    background: radial-gradient(ellipse at bottom, rgba(196,27,22,.05), transparent),
+    radial-gradient(ellipse at top, rgba(32,118,226,.10), transparent);
+}
