@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: #57c7ea;
+}
+
 @font-face {
     font-family: 'Plein-Variable';
     src: url('../public/fonts/Plein/Plein-Variable.woff2') format('woff2'),
@@ -142,28 +147,11 @@
     font-style: italic;
 }
 
-.gradientText {
-    color: #6d94bf;
-}
-.gradientTextGreenish {
-    background: -webkit-linear-gradient(225deg, rgb(0 203 137 / 88%), rgb(0 53 177 / 58%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.divider {
-    height: 2px;
-    width: 100%;
-}
-.divider::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #e7ecf5;
-}
-.footerLink {
-    text-decoration: none;
-    color: #f77777;
+@font-face {
+    font-family: 'Paragraphy';
+    src: url('../public/fonts/Paragraphy/Paragraphy.otf');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
 }
 

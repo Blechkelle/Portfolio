@@ -1,6 +1,43 @@
 .homeWrapper {
     position: relative;
-    height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
+}
+.nameFont {
+    font-family: "Paragraphy";
+    font-size: 10rem;
+    line-height: 9rem;
+}
+.nameFontSmall {
+    font-family: "Paragraphy";
+    font-size: 5rem;
+    line-height: 3rem;
+}
+.topWrapper {
+    z-index: 99;
+    left: 0;
+}
+.topWrapperHeadline {
+    z-index: 99;
+    right: 0;
+}
+.myNameIsJeff {
+    background-image: url('../../../public/images/mynameisjeff.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.headerWrapperWhite {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.headerWrapperBlack {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }

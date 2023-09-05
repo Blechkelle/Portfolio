@@ -50,46 +50,28 @@ const theme = createTheme({
         MuiTypography: {
             styleOverrides: {
                 body1: {
-                    fontFamily: 'Mustica',
+                    fontFamily: 'Plein-Regular',
                 },
                 body2: {
                     fontFamily: 'Inter-Regular',
                 },
                 h1: {
-                    fontFamily: 'Mustica',
-                    fontSize: '5rem',
-                    lineHeight: '5.5rem',
-                    color: '#04162c',
+                    fontFamily: 'Plein-Bold',
                 },
                 h2: {
-                    fontFamily: 'Mustica',
-                    fontSize: '3.5rem',
-                    lineHeight: '4rem',
-                    color: '#04162c',
+                    fontFamily: 'Plein-Bold',
                 },
                 h3: {
-                    fontFamily: 'Mustica',
-                    fontSize: '1.7rem',
-                    lineHeight: '2.1rem',
-                    color: '#728096',
+                    fontFamily: 'Plein-Bold',
                 },
                 h4: {
-                    fontFamily: 'Inter-Regular',
-                    fontSize: '1rem',
-                    lineHeight: '1.4rem',
-                    color: '#728096',
+                    fontFamily: 'Plein-Bold',
                 },
                 h5: {
-                    fontFamily: 'Mustica',
-                    fontSize: '1.5rem',
-                    lineHeight: '2rem',
-                    color: '#04162c',
+                    fontFamily: 'Plein-Bold',
                 },
                 h6: {
-                    fontFamily: 'Mustica',
-                    fontSize: '2rem',
-                    lineHeight: '2rem',
-                    color: '#04162c',
+                    fontFamily: 'Plein-Bold',
                 },
             }
         }
