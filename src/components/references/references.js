@@ -133,7 +133,7 @@ const References = () => {
         },
         {
             title: "PBR Poolwunsch GmbH",
-            website: "https://poolwunsch.any-place.de",
+            website: "https://poolwunsch.poolwunsch-gmbh.de",
             images: [
                 poolwunsch1.src,
                 poolwunsch2.src,
@@ -177,7 +177,7 @@ const References = () => {
         },
         {
             title: "AST Camper GmbH",
-            website: "https://ast-camper.de",
+            website: "https://ast-camper-gmbh.de",
             images: [
                 astcamper1.src,
                 astcamper2.src,
