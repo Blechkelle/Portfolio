@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import anyplace1 from '../../../public/images/references/anyplace_1.png'
 import adlatus1 from '../../../public/images/references/adlatus_1.png'
 import adlatus2 from '../../../public/images/references/adlatus_2.png'
+import adlatus3 from '../../../public/images/references/adlatus_3.png'
 import alexxium1 from '../../../public/images/references/alexxium_1.png'
 import alexxium2 from '../../../public/images/references/alexxium_2.png'
 import alexxium3 from '../../../public/images/references/alexxium_3.png'
@@ -17,6 +18,9 @@ import poolwunsch1 from '../../../public/images/references/poolwunsch_1.jpg'
 import poolwunsch2 from '../../../public/images/references/poolwunsch_2.jpg'
 import poolwunsch3 from '../../../public/images/references/poolwunsch_3.png'
 import poolwunsch4 from '../../../public/images/references/poolwunsch_4.jpg'
+import jamocracy1 from '../../../public/images/references/jamocracy_1.png'
+import jamocracy2 from '../../../public/images/references/jamocracy_2.png'
+import jamocracy3 from '../../../public/images/references/jamocracy_3.png'
 import Typography from "@mui/material/Typography";
 import {FaNodeJs, FaReact} from "react-icons/fa";
 import {SiAdobe, SiApollographql, SiNextdotjs} from "react-icons/si";
@@ -25,6 +29,49 @@ import Link from "next/link";
 const References = () => {
 
     const references = [
+        {
+            title: "Jamocracy",
+            website: "https://jamocracy.io",
+            images: [
+                jamocracy1.src,
+                jamocracy2.src,
+                jamocracy3.src
+            ],
+            tools: [
+                <Tooltip key={1} title="ReactJS" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <FaReact/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={2} title="NextJS" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiNextdotjs/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={3} title="NodeJS" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <FaNodeJs/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={4} title="Apollo GraphQL" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiApollographql/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={5} title="Adobe" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiAdobe/>
+                    </Typography>
+                </Tooltip>
+            ],
+            description: (
+                <Stack px={2} direction={'column'} spacing={1}>
+                    <Typography color={'#ffffff'} variant={'body1'}>
+                        Jamocracy (the name is a pun for Jam and Democracy) is exactly that: A democratic voting system for Partys. Users can add tracks and vote on them. The party owner can adjust various settings, allowing for a very much personalized experience.
+                    </Typography>
+                </Stack>
+            )
+        },
         {
             title: "ALEXXIUM Personal GmbH",
             website: "https://alexxium-personal.de",
@@ -73,7 +120,8 @@ const References = () => {
             website: "https://adlatus-dienstleistung.de",
             images: [
                 adlatus1.src,
-                adlatus2.src
+                adlatus2.src,
+                adlatus3.src
             ],
             tools: [
                 <Tooltip key={6} title="NextJS" placement="top">
@@ -96,37 +144,6 @@ const References = () => {
                 <Stack px={2} direction={'column'} spacing={1}>
                     <Typography color={'#ffffff'} variant={'body1'}>
                         Onepage Website, Logo Remake, Contact API
-                    </Typography>
-                </Stack>
-            )
-        },
-        {
-            title: "AnyPlace 360 Grad Touren",
-            website: "https://any-place.de",
-            images: [
-                anyplace1.src
-            ],
-            tools: [
-                <Tooltip key={9} title="NextJS" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <SiNextdotjs/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={10} title="NodeJS" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <FaNodeJs/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={11} title="Adobe" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <SiAdobe/>
-                    </Typography>
-                </Tooltip>
-            ],
-            description: (
-                <Stack px={2} direction={'column'} spacing={1}>
-                    <Typography color={'#ffffff'} variant={'body1'}>
-                        Multipage Website, Logo, Advertisements, Print Media, Contact API
                     </Typography>
                 </Stack>
             )
@@ -208,47 +225,6 @@ const References = () => {
                 </Stack>
             )
         },
-        {
-            title: "Car4Fun Autovermietung Konzept",
-            images: [
-                c4f1.src,
-                c4f2.src
-            ],
-            tools: [
-                <Tooltip key={20} title="ReactJS" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <FaReact/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={21} title="NextJS" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <SiNextdotjs/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={22} title="NodeJS" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <FaNodeJs/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={23} title="Apollo GraphQL" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <SiApollographql/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={24} title="Adobe" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <SiAdobe/>
-                    </Typography>
-                </Tooltip>
-            ],
-            description: (
-                <Stack px={2} direction={'column'} spacing={1}>
-                    <Typography color={'#ffffff'} variant={'body1'}>
-                        Multipage Website, Logo, Contact API, Custom CMS
-                    </Typography>
-                </Stack>
-            )
-        }
     ]
 
     const renderReferenceImages = () => {
@@ -284,7 +260,7 @@ const References = () => {
 
     const renderReferences = () => {
         return references.map((reference, index) => (
-            <Stack direction={'column'} spacing={1} key={index}>
+            <Stack direction={'column'} spacing={2} key={index}>
                 <Stack px={2} direction={'row'} spacing={1} justifyContent={'space-between'}
                        alignItems={'center'}>
                     <Typography variant={'h5'} color={'#ffffff'}>{reference.title}</Typography>
@@ -304,6 +280,11 @@ const References = () => {
                             </Typography>
                         </Stack>
                     </Box>}
+                <Stack px={2} spacing={2} direction={'row'}>
+                    {reference.images.map((image, index) => (
+                        <img height={'100px'} src={image} alt={reference.title + " reference image " + index}/>
+                    ))}
+                </Stack>
             </Stack>
         ))
     }
