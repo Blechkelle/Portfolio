@@ -25,6 +25,7 @@ import Typography from "@mui/material/Typography";
 import {FaNodeJs, FaReact} from "react-icons/fa";
 import {SiAdobe, SiApollographql, SiNextdotjs} from "react-icons/si";
 import Link from "next/link";
+import Image from "next/image";
 
 const References = () => {
 
@@ -280,9 +281,9 @@ const References = () => {
                             </Typography>
                         </Stack>
                     </Box>}
-                <Stack px={2} spacing={2} direction={'row'}>
+                <Stack px={2} direction={'row'} sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}>
                     {reference.images.map((image, index) => (
-                        <img height={'100px'} src={image} alt={reference.title + " reference image " + index}/>
+                        <Image style={{ width: 'auto', height: '200px' }} key={index} height={200} width={500} src={image} alt={reference.title + " reference image " + index}/>
                     ))}
                 </Stack>
             </Stack>

@@ -10,16 +10,6 @@ export default class MyDocument extends Document {
                 <Head>
                     {/* Inject MUI styles first to match with the prepend: true configuration. */}
                     {this.props.emotionStyleTags}
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-231942807-1"/>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-
-                        gtag('config', 'UA-231942807-1');`,
-                        }}
-                    />
                 </Head>
                 <body style={{ overflowX: 'hidden' }}>
                 <Main/>
