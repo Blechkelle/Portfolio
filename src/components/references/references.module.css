@@ -35,7 +35,30 @@
 }
 
 .divider {
-    background-color: #2d2d2d;
-    height: 1px;
+    background-color: #171717;
+    height: 2px;
     width: 100%;
+}
+.divider:before {
+    content: '';
+    position: absolute;
+    background-color: #171717;
+    height: 2px;
+    width: 100%;
+    left: 0;
+}
+.divider:after {
+    content: '';
+    position: absolute;
+    background-color: #171717;
+    height: 2px;
+    width: 100%;
+    right: 0;
+}
+.referenceImage {
+    border-radius: 5px;
+}
+.referenceImageWrapper {
+    background-color: #171717;
+    border-radius: 10px;
 }

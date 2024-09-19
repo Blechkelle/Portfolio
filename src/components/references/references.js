@@ -2,18 +2,18 @@ import styles from "./references.module.css"
 import {Box, Grid, Stack, Tooltip} from "@mui/material";
 import Container from "@mui/material/Container";
 
-import anyplace1 from '../../../public/images/references/anyplace_1.png'
 import adlatus1 from '../../../public/images/references/adlatus_1.png'
 import adlatus2 from '../../../public/images/references/adlatus_2.png'
 import adlatus3 from '../../../public/images/references/adlatus_3.png'
+import adlatus4 from '../../../public/images/references/adlatus_4.png'
 import alexxium1 from '../../../public/images/references/alexxium_1.png'
 import alexxium2 from '../../../public/images/references/alexxium_2.png'
 import alexxium3 from '../../../public/images/references/alexxium_3.png'
+import alexxium4 from '../../../public/images/references/alexxium_4.png'
 import astcamper1 from '../../../public/images/references/ast_camper_1.png'
 import astcamper2 from '../../../public/images/references/ast_camper_2.png'
 import astcamper3 from '../../../public/images/references/ast_camper_3.png'
-import c4f1 from '../../../public/images/references/c4f_1.png'
-import c4f2 from '../../../public/images/references/c4f_2.png'
+import astcamper4 from '../../../public/images/references/ast_camper_4.png'
 import poolwunsch1 from '../../../public/images/references/poolwunsch_1.jpg'
 import poolwunsch2 from '../../../public/images/references/poolwunsch_2.jpg'
 import poolwunsch3 from '../../../public/images/references/poolwunsch_3.png'
@@ -21,6 +21,7 @@ import poolwunsch4 from '../../../public/images/references/poolwunsch_4.jpg'
 import jamocracy1 from '../../../public/images/references/jamocracy_1.png'
 import jamocracy2 from '../../../public/images/references/jamocracy_2.png'
 import jamocracy3 from '../../../public/images/references/jamocracy_3.png'
+import jamocracy4 from '../../../public/images/references/jamocracy_4.png'
 import Typography from "@mui/material/Typography";
 import {FaNodeJs, FaReact} from "react-icons/fa";
 import {SiAdobe, SiApollographql, SiNextdotjs} from "react-icons/si";
@@ -34,6 +35,7 @@ const References = () => {
             title: "Jamocracy",
             website: "https://jamocracy.io",
             images: [
+                jamocracy4.src,
                 jamocracy1.src,
                 jamocracy2.src,
                 jamocracy3.src
@@ -68,7 +70,9 @@ const References = () => {
             description: (
                 <Stack px={2} direction={'column'} spacing={1}>
                     <Typography color={'#ffffff'} variant={'body1'}>
-                        Jamocracy (the name is a pun for Jam and Democracy) is exactly that: A democratic voting system for Partys. Users can add tracks and vote on them. The party owner can adjust various settings, allowing for a very much personalized experience.
+                        Jamocracy (the name is a pun for Jam and Democracy) is exactly that: A democratic voting system
+                        for Partys. Users can add tracks and vote on them. The party owner can adjust various settings,
+                        allowing for a very much personalized experience.
                     </Typography>
                 </Stack>
             )
@@ -79,7 +83,8 @@ const References = () => {
             images: [
                 alexxium1.src,
                 alexxium2.src,
-                alexxium3.src
+                alexxium3.src,
+                alexxium4.src
             ],
             tools: [
                 <Tooltip key={1} title="ReactJS" placement="top">
@@ -122,7 +127,8 @@ const References = () => {
             images: [
                 adlatus1.src,
                 adlatus2.src,
-                adlatus3.src
+                adlatus3.src,
+                adlatus4.src
             ],
             tools: [
                 <Tooltip key={6} title="NextJS" placement="top">
@@ -199,6 +205,7 @@ const References = () => {
             images: [
                 astcamper1.src,
                 astcamper2.src,
+                astcamper4.src,
                 astcamper3.src
             ],
             tools: [
@@ -261,48 +268,54 @@ const References = () => {
 
     const renderReferences = () => {
         return references.map((reference, index) => (
-            <Stack direction={'column'} spacing={2} key={index}>
-                <Stack px={2} direction={'row'} spacing={1} justifyContent={'space-between'}
-                       alignItems={'center'}>
-                    <Typography variant={'h5'} color={'#ffffff'}>{reference.title}</Typography>
-                    <Stack direction={'row'} spacing={1}>
-                        {reference.tools.map((tool) => (
-                            tool
-                        ))}
-                    </Stack>
-                </Stack>
-                {reference.description}
-                {reference.website &&
-                    <Box px={2}>
-                        <Stack direction={'row'} spacing={1}>
-                            <Typography variant={'body1'} color={'#ffffff'}>Website:</Typography>
-                            <Typography variant={'body1'} color={'#57c7ea'}>
-                                <Link href={reference.website}>{reference.website}</Link>
-                            </Typography>
+            <Box py={5} className={styles.referenceListWrapper} display={'flex'} alignItems={'center'}
+                 justifyContent={'center'}>
+                <Container maxWidth={'md'}>
+                    <Stack direction={'column'} spacing={2} key={index}>
+                        <Stack px={2} direction={'row'} spacing={1} justifyContent={'space-between'}
+                               alignItems={'center'}>
+                            <Typography variant={'h4'} color={'#ffffff'}>{reference.title}</Typography>
+                            <Stack direction={'row'} spacing={1}>
+                                {reference.tools.map((tool) => (
+                                    tool
+                                ))}
+                            </Stack>
                         </Stack>
-                    </Box>}
-                <Stack px={2} direction={'row'} sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}>
-                    {reference.images.map((image, index) => (
-                        <Image style={{ width: 'auto', height: '200px' }} key={index} height={200} width={500} src={image} alt={reference.title + " reference image " + index}/>
-                    ))}
-                </Stack>
-            </Stack>
+                        {reference.description}
+                        <Box p={1} className={styles.referenceImageWrapper}>
+                            <Grid container spacing={1}>
+                                {reference.images.map((image, index) => (
+                                    <Grid item xs={12} md={6}>
+                                        <Image className={styles.referenceImage}
+                                               style={{width: '100%', height: '100%', objectFit: 'cover'}} key={index}
+                                               height={200} width={500}
+                                               src={image} alt={reference.title + " reference image " + index}/>
+                                    </Grid>
+                                ))}
+                            </Grid>
+                        </Box>
+                        {reference.website &&
+                            <Box px={2}>
+                                <Stack direction={'row'} spacing={1}>
+                                    <Typography variant={'body1'} color={'#ffffff'}>Website:</Typography>
+                                    <Typography variant={'body1'} color={'#57c7ea'}>
+                                        <Link href={reference.website}>{reference.website}</Link>
+                                    </Typography>
+                                </Stack>
+                            </Box>}
+                    </Stack>
+                </Container>
+                <Box className={styles.gradient}/>
+                <Box className={styles.gradientBottom}/>
+            </Box>
         ))
     }
 
     return (
-        <Box className={styles.referencesWrapper}>
-            <Box py={15} className={styles.referenceListWrapper} display={'flex'} alignItems={'center'}
-                 justifyContent={'center'}>
-                <Container maxWidth={'md'}>
-                    <Stack direction={'column'} spacing={5} divider={<Box className={styles.divider}/>}>
-                        {renderReferences()}
-                    </Stack>
-                </Container>
-            </Box>
-            <Box className={styles.referencesOverlay}>
-                {renderReferenceImages()}
-            </Box>
+        <Box className={styles.referencesWrapper} py={15}>
+            <Stack direction={'column'} divider={<Box className={styles.divider}/>}>
+                {renderReferences()}
+            </Stack>
         </Box>
     )
 }

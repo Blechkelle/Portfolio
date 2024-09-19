@@ -6,11 +6,13 @@ import Container from "@mui/material/Container";
 import {AnimatePresence, LayoutGroup, motion, useInView} from "framer-motion";
 import getScrollPosition from "../../scroll";
 import {containerElement, itemElement} from "../../framer";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
+import Contact from "../contact/contact";
 
 const Home = () => {
 
     const ref = useRef(null)
+
     const isInView = useInView(ref)
     useEffect(() => {
 
@@ -25,41 +27,59 @@ const Home = () => {
             <AnimatePresence>
                 <LayoutGroup id={'homeAnim'}>
                     {getScrollPosition() >= 50 &&
-                    <Stack px={5} py={3} direction={'row'} sx={{ backgroundColor: { md: 'transparent', xs: isInView ? "#ffffff" : '#000000' } }} className={isInView ? styles.headerWrapperWhite : styles.headerWrapperBlack} justifyContent={'space-between'} alignItems={'center'}>
-                        <motion.div className={styles.topWrapper} layoutId={'nameLogo'}
-                                    transition={{type: 'spring', stiffness: 200, mass: isInView ? 0.1 : 0, damping: 15}}>
-                            <Typography className={styles.nameFontSmall} color={isInView ? "#000000" : "#ffffff"}>Jeff<span
-                                style={{color: isInView ? "#d5d5d5" : "#656565"}}>rey</span></Typography>
-                        </motion.div>
-                        <motion.div className={styles.topWrapperHeadline} layoutId={'textHeadline'}
-                                    transition={{type: 'spring', stiffness: 200, mass: isInView ? 0.1 : 0, damping: 15}}>
-                            <Typography color={isInView ? "#000000" : "#ffffff"} variant={'h5'}>{isInView ? "About Me" : "My Work"}</Typography>
-                        </motion.div>
-                    </Stack>}
+                        <Stack px={5} py={3} direction={'row'}
+                               sx={{backgroundColor: {md: 'transparent', xs: isInView ? "#ffffff" : '#000000'}}}
+                               className={isInView ? styles.headerWrapperWhite : styles.headerWrapperBlack}
+                               justifyContent={'space-between'} alignItems={'center'}>
+                            <motion.div className={styles.topWrapper} layoutId={'nameLogo'}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 200,
+                                            mass: isInView ? 0.1 : 0,
+                                            damping: 25
+                                        }}>
+                                <Typography className={styles.nameFontSmall} color={isInView ? "#000000" : "#ffffff"}>Jeff<span
+                                    style={{color: isInView ? "#d5d5d5" : "#656565"}}>rey</span></Typography>
+                            </motion.div>
+                            <motion.div className={styles.topWrapperHeadline} layoutId={'textHeadline'}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 200,
+                                            mass: isInView ? 0.1 : 0,
+                                            damping: 25
+                                        }}>
+                                <Typography color={isInView ? "#000000" : "#ffffff"}
+                                            variant={'h5'}>{isInView ? "About Me" : "My Work"}</Typography>
+                            </motion.div>
+                        </Stack>}
                     <Container maxWidth={'sm'} ref={ref}>
                         <Box py={15} className={styles.homeWrapper} display={'flex'} alignItems={'center'}
                              justifyContent={'center'}>
                             <Stack direction={'column'} spacing={10}>
                                 <motion.div key={0} variants={itemElement}>
-                                    <Stack height={'216px'} textAlign={'center'} direction={'column'}>
+                                    <Stack textAlign={'center'} direction={'column'} spacing={2}  style={{height: '345px'}}>
 
                                         {getScrollPosition() <= 50 &&
                                             <motion.div layoutId={'textHeadline'}
                                                         transition={{
                                                             type: 'spring',
                                                             stiffness: 200,
-                                                            mass: 0.1,
-                                                            damping: 15
+                                                            mass: 1,
+                                                            damping: 25
                                                         }}>
-                                                <Typography variant={'h2'}>Hi! My name is</Typography>
+                                                <Stack direction={'column'}>
+                                                    <Typography variant={'h1'}>Hi!</Typography>
+                                                    <Typography variant={'h4'}>My name is</Typography>
+                                                </Stack>
+
                                             </motion.div>}
                                         {getScrollPosition() <= 50 &&
                                             <motion.div layoutId={'nameLogo'}
                                                         transition={{
                                                             type: 'spring',
                                                             stiffness: 200,
-                                                            mass: 0.1,
-                                                            damping: 15
+                                                            mass: 1,
+                                                            damping: 25
                                                         }}>
                                                 <Typography className={styles.nameFont}>Jeff<span
                                                     style={{color: "#d5d5d5"}}>rey</span></Typography>

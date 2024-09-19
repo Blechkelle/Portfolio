@@ -57,6 +57,7 @@ const theme = createTheme({
                 },
                 h1: {
                     fontFamily: 'Plein-Bold',
+                    lineHeight: '6rem',
                 },
                 h2: {
                     fontFamily: 'Plein-Bold',

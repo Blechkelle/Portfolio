@@ -1,12 +1,13 @@
 .homeWrapper {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     overflow: visible;
 }
 .nameFont {
     font-family: "Paragraphy";
-    font-size: 10rem;
-    line-height: 9rem;
+    font-size: 12rem;
+    line-height: 12rem;
 }
 .nameFontSmall {
     font-family: "Paragraphy";
