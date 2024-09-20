@@ -1,0 +1,20 @@
+.nameFont {
+    font-family: "Paragraphy";
+    font-size: 12rem;
+    line-height: 12rem;
+    color: #000000;
+}
+.zoomContainer {
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+.zoomContent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
