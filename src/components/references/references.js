@@ -268,10 +268,10 @@ const References = () => {
 
     const renderReferences = () => {
         return references.map((reference, index) => (
-            <Box py={5} className={styles.referenceListWrapper} display={'flex'} alignItems={'center'}
+            <Box key={index} py={5} className={styles.referenceListWrapper} display={'flex'} alignItems={'center'}
                  justifyContent={'center'}>
                 <Container maxWidth={'md'}>
-                    <Stack direction={'column'} spacing={2} key={index}>
+                    <Stack direction={'column'} spacing={2}>
                         <Stack px={2} direction={'row'} spacing={1} justifyContent={'space-between'}
                                alignItems={'center'}>
                             <Typography variant={'h4'} color={'#ffffff'}>{reference.title}</Typography>
@@ -285,9 +285,9 @@ const References = () => {
                         <Box p={1} className={styles.referenceImageWrapper}>
                             <Grid container spacing={1}>
                                 {reference.images.map((image, index) => (
-                                    <Grid item xs={12} md={6}>
+                                    <Grid key={index} item xs={12} md={6}>
                                         <Image className={styles.referenceImage}
-                                               style={{width: '100%', height: '100%', objectFit: 'cover'}} key={index}
+                                               style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                                height={200} width={500}
                                                src={image} alt={reference.title + " reference image " + index}/>
                                     </Grid>
