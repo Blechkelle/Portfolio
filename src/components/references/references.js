@@ -312,7 +312,7 @@ const References = () => {
     }
 
     return (
-        <Box className={styles.referencesWrapper} py={15}>
+        <Box className={styles.referencesWrapper} py={5}>
             <Stack direction={'column'} divider={<Box className={styles.divider}/>}>
                 {renderReferences()}
             </Stack>

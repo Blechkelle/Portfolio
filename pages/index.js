@@ -10,7 +10,6 @@ export default function Index() {
         <>
             <Meta/>
             <Hello/>
-            <Home/>
             <References/>
             {/*
             <Home/>

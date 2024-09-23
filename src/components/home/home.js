@@ -1,18 +1,19 @@
 import * as React from 'react';
 import {Box, Stack} from "@mui/material";
 import Typography from "@mui/material/Typography";
-import {motion} from "framer-motion";
+import {motion, useScroll, useTransform} from "framer-motion";
 import {itemElement} from "../../framer";
 import Container from "@mui/material/Container";
+import styles from "./home.module.css";
+import {useRef} from "react";
 
 const Home = () => {
 
+
     return (
-        <Box style={{backgroundColor: "#000000", color: '#ffffff'}}>
-            <Container maxWidth={'sm'}>
-
-
-                <Stack direction={'column'} spacing={2} pb={15}>
+        <motion.div className={styles.homeWrapper} style={{color: '#ffffff'}}>
+            <Container className={styles.homeContainer} maxWidth={'sm'}>
+                <Stack direction={'column'} spacing={2}>
                     <motion.div key={1} variants={itemElement}>
                         <Stack direction={'column'} p={1}>
                             <Typography variant={'h6'}>What i do</Typography>
@@ -53,7 +54,7 @@ const Home = () => {
                     </motion.div>
                 </Stack>
             </Container>
-        </Box>
+        </motion.div>
     );
 }
 
