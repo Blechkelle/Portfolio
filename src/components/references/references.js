@@ -22,6 +22,10 @@ import jamocracy1 from '../../../public/images/references/jamocracy_1.png'
 import jamocracy2 from '../../../public/images/references/jamocracy_2.png'
 import jamocracy3 from '../../../public/images/references/jamocracy_3.png'
 import jamocracy4 from '../../../public/images/references/jamocracy_4.png'
+import tjd1 from '../../../public/images/references/tjd_1.gif'
+import tjd2 from '../../../public/images/references/tjd_2.png'
+import tjd3 from '../../../public/images/references/tjd_3.png'
+import tjd4 from '../../../public/images/references/tjd_4.png'
 import Typography from "@mui/material/Typography";
 import {FaNodeJs, FaReact} from "react-icons/fa";
 import {SiAdobe, SiApollographql, SiNextdotjs} from "react-icons/si";
@@ -229,6 +233,35 @@ const References = () => {
                 <Stack px={2} direction={'column'} spacing={1}>
                     <Typography color={'#ffffff'} variant={'body1'}>
                         Onepage Website, Logo Remake, Advertisements, Social Media Posts, Contact API
+                    </Typography>
+                </Stack>
+            )
+        },
+        {
+            title: "Personal Portfolio - thejeff.dev",
+            website: "https://thejeff.dev",
+            images: [
+                tjd1.src,
+                tjd2.src,
+                tjd3.src,
+                tjd4.src
+            ],
+            tools: [
+                <Tooltip key={17} title="NextJS" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiNextdotjs/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={19} title="Adobe" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiAdobe/>
+                    </Typography>
+                </Tooltip>
+            ],
+            description: (
+                <Stack px={2} direction={'column'} spacing={1}>
+                    <Typography color={'#ffffff'} variant={'body1'}>
+                        Onepage Website
                     </Typography>
                 </Stack>
             )
