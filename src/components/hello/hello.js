@@ -13,11 +13,11 @@ const Hello = () => {
     const scale = useTransform(scrollYProgress, [0, 15], [1, 2000]);
     const y = useTransform(scrollYProgress, [0, 15], [0, 285000]);
     const x = useTransform(scrollYProgress, [0, 15], [0, -41000]);
-    const backgroundColor = useTransform(scrollYProgress, [0.5, 1], ['#ffffff', '#000000']);
-    const opacity = useTransform(scrollYProgress, [0.2, 1, 1.5], [0, 1, 0]);
+    const backgroundColor = useTransform(scrollYProgress, [0.5, 0.8], ['#ffffff', '#000000']);
+    const opacity = useTransform(scrollYProgress, [0.4, 0.8], [0, 1]);
 
     return (
-        <motion.div ref={scrollRef} style={{height: '250vh', backgroundColor}}>
+        <motion.div ref={scrollRef} style={{height: '350vh', backgroundColor}}>
             <Box className={styles.zoomContainer}>
                 <Box className={styles.zoomContent}>
                     <motion.div style={{scale, y, x}}>
