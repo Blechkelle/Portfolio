@@ -26,6 +26,10 @@ import tjd1 from '../../../public/images/references/tjd_1.gif'
 import tjd2 from '../../../public/images/references/tjd_2.png'
 import tjd3 from '../../../public/images/references/tjd_3.png'
 import tjd4 from '../../../public/images/references/tjd_4.png'
+import solarwunsch1 from '../../../public/images/references/solarwunsch_1.png'
+import solarwunsch2 from '../../../public/images/references/solarwunsch_2.png'
+import solarwunsch3 from '../../../public/images/references/solarwunsch_3.png'
+import solarwunsch4 from '../../../public/images/references/solarwunsch_4.png'
 import Typography from "@mui/material/Typography";
 import {FaNodeJs, FaReact} from "react-icons/fa";
 import {SiAdobe, SiApollographql, SiNextdotjs} from "react-icons/si";
@@ -58,11 +62,6 @@ const References = () => {
                 <Tooltip key={3} title="NodeJS" placement="top">
                     <Typography variant={'h6'} color={'#ffffff'}>
                         <FaNodeJs/>
-                    </Typography>
-                </Tooltip>,
-                <Tooltip key={4} title="Apollo GraphQL" placement="top">
-                    <Typography variant={'h6'} color={'#ffffff'}>
-                        <SiApollographql/>
                     </Typography>
                 </Tooltip>,
                 <Tooltip key={5} title="Adobe" placement="top">
@@ -155,6 +154,40 @@ const References = () => {
                 <Stack px={2} direction={'column'} spacing={1}>
                     <Typography color={'#ffffff'} variant={'body1'}>
                         Onepage Website, Logo Remake, Contact API
+                    </Typography>
+                </Stack>
+            )
+        },
+        {
+            title: "PBS Solarwunsch GmbH",
+            website: "https://solarwunsch-gmbh.de",
+            images: [
+                solarwunsch1.src,
+                solarwunsch2.src,
+                solarwunsch3.src,
+                solarwunsch4.src
+            ],
+            tools: [
+                <Tooltip key={12} title="ReactJS" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <FaReact/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={13} title="NextJS" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiNextdotjs/>
+                    </Typography>
+                </Tooltip>,
+                <Tooltip key={16} title="Adobe" placement="top">
+                    <Typography variant={'h6'} color={'#ffffff'}>
+                        <SiAdobe/>
+                    </Typography>
+                </Tooltip>
+            ],
+            description: (
+                <Stack px={2} direction={'column'} spacing={1}>
+                    <Typography color={'#ffffff'} variant={'body1'}>
+                        Multipage Website, Logo, Advertisements, Print Media, Contact API, Full Stack CMS
                     </Typography>
                 </Stack>
             )
